@@ -6,7 +6,11 @@ setup(name='diveinto-cli',
       description='Task manager',
       author='chu',
       author_email='they.know.who.is.the.strongest@gmail.com',
-      licence='MIT',
+      license='MIT',
       packages=['diveinto_cli'],
       test_suite='tests',
+      entry_points="""
+      [console_scripts]
+      diveinto = diveinto_cli.cli:Main
+      """,
       )
